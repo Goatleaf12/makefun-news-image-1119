@@ -1,8 +1,8 @@
 # The Global Ledger — Thursday 19 November 2026
 
-[![Competition](https://img.shields.io/badge/make.fun-news--image--20261119-blue)](https://make.fun/competitions/news-image-20261119)
-[![Prize](https://img.shields.io/badge/prize-$250%20top%2050-gold)](https://make.fun/competitions/news-image-20261119)
-[![Deadline](https://img.shields.io/badge/deadline-21%20Nov%202026%2000%3A00%20UTC-red)](https://make.fun/competitions/news-image-20261119)
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/Goatleaf12/makefun-news-image-1119/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/Goatleaf12/makefun-news-image-1119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One image that sums up the world's news of **Thursday 19 November 2026**:
 a newspaper front page with 40 stories — three illustrated leads, ten
