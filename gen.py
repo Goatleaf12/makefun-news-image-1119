@@ -300,8 +300,8 @@ def paint(draw, box, ops):
             fill_top = bot - (bot - top) * level
             draw.rectangle([x - tube_w * 0.22, fill_top, x + tube_w * 0.22,
                             bot], fill=(216, 60, 50))
-            br = tube_w * 0.85
-            draw.ellipse([x - br, bot - 2, x + br, bot - 2 + 2 * br],
+            br = tube_w * 0.62
+            draw.ellipse([x - br, bot - br, x + br, bot + br],
                          fill=(216, 60, 50))
             for i in range(4):
                 ty = top + (bot - top) * (i + 0.5) / 4
@@ -445,7 +445,7 @@ STORIES = [
          deck="The slim draft drops fossil fuels and the $120bn aid goal.",
          chip="SLIM DRAFT", pin=(24.0, 40.0),
          scene=[("bg", (16, 52, 58)),
-                ("thermo", 0.28, 0.52, 0.13, 0.72),
+                ("thermo", 0.28, 0.44, 0.13, 0.72),
                 ("rect", 0.56, 0.14, 0.36, 0.52, (245, 245, 240)),
                 ("line", 0.60, 0.26, 0.88, 0.26, (150, 150, 150), 2),
                 ("line", 0.60, 0.38, 0.88, 0.38, (150, 150, 150), 2),
@@ -481,7 +481,7 @@ STORIES = [
               "near Puri.",
          chip="LANDFALL FRI", pin=(85.83, 19.80),
          scene=[("bg", (70, 84, 98)),
-                ("spiral", 0.36, 0.42, 0.19, (235, 240, 245)),
+                ("spiral", 0.36, 0.46, 0.17, (235, 240, 245)),
                 ("line", 0.08, 0.08, 0.03, 0.30, (200, 215, 230), 2),
                 ("line", 0.20, 0.05, 0.15, 0.27, (200, 215, 230), 2),
                 ("line", 0.90, 0.06, 0.85, 0.28, (200, 215, 230), 2),
