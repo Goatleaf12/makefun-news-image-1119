@@ -5,12 +5,12 @@
 [![reward](https://make.fun/badge/news-image-20261119/Goatleaf12/makefun-news-image-1119/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
 
 One image that sums up the world's news of **Thursday 19 November 2026**:
-a newspaper front page with 40 stories — three illustrated leads, ten
+a newspaper front page with 33 stories — three illustrated leads, ten
 illustrated grid stories, a world map with the thirteen illustrated
-stories pinned on it, and twenty-seven more stories in the ALSO list.
-Every story happened, or was first reported, on that Thursday; a
-DATE CHECK box names the tempting stories left out because they were
-first reported on 18 November or earlier.
+stories pinned on it, and twenty more stories in the ALSO THURSDAY
+briefs column. Every story happened, or was first reported, on that
+Thursday; a DATE CHECK line names the tempting story reframed because
+its milestone fell on 18 November.
 
 The front page leads on the first Trump–Xi–Putin three-way summit in
 Shenzhen and its four-point peace declaration, the World Court's 9–6
@@ -19,18 +19,27 @@ Anthropic's record-breaking Nasdaq debut.
 
 ## How it works
 
-- `gen.py` draws the whole page in code with PIL (Liberation Serif and
-  Sans): masthead, region count bar, day-in-numbers strip, data-driven
-  story cells with painted scenes, a flat world map, the ALSO list, the
-  DATE CHECK box and the footer. It writes `entry.png` (1024×1024).
+- Every story scene is an original illustration generated for this
+  edition (`scenes/s01.webp` … `scenes/s13.webp`) in one consistent
+  editorial style — no text inside the art, so nothing can garble.
+- `gen_v3.py` composes the page with PIL: it centre-crops each scene
+  into its story cell and typesets everything else — masthead, region
+  count bar, day-in-numbers strip, headlines, decks with sources, the
+  pin map, the one-line ALSO briefs (sources preserved), the DATE CHECK
+  and the footer. It writes `entry.png` (1024×1024, deterministic:
+  identical SHA-256 on every run).
+- Measured gate for this edition: **87,507 unique colours** and
+  **513,950 bytes** for the final render.
 - `main.ts` is the submitted program: it copies the shipped `entry.png`
   to `$MAKEFUN_OUTPUT_DIR/entry.png` (or `/output/entry.png`). It runs
   offline and writes identical bytes on every run.
+- Earlier editions of this page (code-painted scenes) are kept in
+  `gen.py` for the record.
 
 ## Run it
 
 ```sh
-python3 gen.py        # regenerate entry.png (deterministic)
+python3 gen_v3.py     # regenerate entry.png (deterministic)
 node main.ts          # writes /output/entry.png
 ```
 
